@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository to a workspace
-                git credentialsId: 'jenkins-cicd', url: 'git@github.com:kunaldenvr/jenkins-pipeline.git'
+                git credentialsId: 'jenkins-cicd', url: 'git@github.com:kunaldenvr/jenkins-pipeline.git',
                 branch: 'main'
             }
         }
