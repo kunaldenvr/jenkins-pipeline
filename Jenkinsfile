@@ -25,6 +25,8 @@ pipeline {
                 
                 // Commit the changes
                 sh 'git commit -m "Update files via Jenkins"'
+                sh 'git config --global user.email "kunal@denvrdata.com"'
+                sh 'git config --global user.name "kunal"'
                 sh 'git branch -M main'
                 sh 'git push git@github.com:kunaldenvr/jenkins-pipeline.git HEAD:main'
                 // Push the changes back to the GitHub repository
