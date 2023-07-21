@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository to a workspace
-                git credentialsId: 'github-https', url: 'https://github.com/kunaldenvr/gitops-cicd.git'
+                git credentialsId: 'github-https', url: 'https://github.com/kunaldenvr/jenkins-pipeline.git'
             }
         }
 
